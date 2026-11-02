@@ -1933,33 +1933,6 @@ body {
   font-size: 15px;
 }
 
-/* Botão de Atalho Rápido de Modo (Bottom Left Floating Pill) */
-.mode-toggle-pill {
-  position: fixed;
-  bottom: 18px;
-  left: 18px;
-  z-index: 999;
-  background: rgba(18, 20, 29, 0.9);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  color: #F8FAFC;
-  padding: 8px 14px;
-  border-radius: var(--radius-pill);
-  font-size: 12px;
-  font-weight: 700;
-  cursor: pointer;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(10px);
-  transition: all 0.2s ease;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.mode-toggle-pill:hover {
-  background: var(--primary-pink);
-  border-color: var(--primary-pink);
-  transform: translateY(-2px);
-}
 
 /* Ajustes Responsivos */
 @media (max-width: 480px) {

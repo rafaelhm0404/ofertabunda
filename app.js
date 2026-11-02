@@ -1171,21 +1171,7 @@
       renderCurrentStep();
     }
 
-    // Botão de atalho rápido de visualização (para o usuário testar a oferta direto ou o quiz)
-    const toggleBtn = document.getElementById('btn-mode-toggle');
-    if (toggleBtn) {
-      toggleBtn.addEventListener('click', () => {
-        const d = getQuizData();
-        const pitchIdx = d.steps.findIndex(s => s.stepName === 'pitch');
-        if (state.currentStepIndex === pitchIdx) {
-          jumpToStep(0);
-          toggleBtn.textContent = '⚡ Ver Página de Vendas';
-        } else {
-          jumpToStep(pitchIdx);
-          toggleBtn.textContent = '🔄 Recomeçar Quiz';
-        }
-      });
-    }
+
   });
 
 })();
